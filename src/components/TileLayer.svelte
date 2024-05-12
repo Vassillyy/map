@@ -17,7 +17,3 @@
     });
 
 </script>
-
-<div>
-    <slot name='DragAndDrop'></slot>
-</div>
