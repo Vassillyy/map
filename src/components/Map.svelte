@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { Map, View } from "ol";
+  import Map from "ol/Map";
   import { setContext } from "svelte";
   import { useGeographic } from "ol/proj";
 
@@ -10,10 +10,6 @@
     useGeographic();
     map = new Map({
       target: "map",
-      view: new View({
-        center: [0, 0],
-        zoom: 3,
-      }),
     });
   });
 
@@ -21,7 +17,9 @@
 </script>
 
 <div id="map">
-  <slot />
+   <slot name='TileLayer'></slot>
+   <slot name='View'></slot>
+   <slot name='Link'></slot>
 </div>
 
 <style>
