@@ -9,21 +9,21 @@
   onMount(() => {
     useGeographic();
     map = new Map({
-      target: "map",
+      target: "map-cont",
     });
   });
 
   setContext("map", map);
 </script>
 
-<div id="map">
-   <slot name='TileLayer'></slot>
-   <slot name='View'></slot>
-   <slot name='Link'></slot>
+<div id="map-cont">
+  <slot name="TileLayer"></slot>
+  <slot name="View"></slot>
+  <slot name="Link"></slot>
 </div>
 
 <style>
-  #map {
+  #map-cont {
     width: 100%;
     height: 400px;
   }

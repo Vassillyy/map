@@ -17,4 +17,17 @@
         }
     })
 
+    // let view;
+    // if (map) {
+    //     view = new View({
+    //         center: fromLonLat([0, 0]),
+    //         zoom: 3,
+    //     })
+    // }
+    // onMount(() => {
+    //     map.addView(view);
+    // })
+
+    
+
 </script>
